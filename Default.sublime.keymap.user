@@ -1,0 +1,36 @@
+[
+	{ "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["super+0"], "command": "focus_group", "args": { "group": 0 } },
+	{ "keys": ["super+4"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+	{ "keys": ["super+shift+a"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["super+d"], "command": "duplicate_line" },
+	{ "keys": ["super+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
+	{ "keys": ["super+shift+up"], "command": "swap_line_up" },
+	{ "keys": ["super+shift+down"], "command": "swap_line_down" },
+	{ "keys": ["super+?"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+?"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["super+j"], "command": "join_lines" },
+	{ "keys": ["super+space"], "command": "auto_complete" },
+	{ "keys": ["super+left"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["super+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+	{ "keys": ["super+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+	{ "keys": ["super+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+	{ "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+	{ "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+	{ "keys": ["alt+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+	{ "keys": ["super+w"], "command": "find_under_expand" },
+	{ "keys": ["super+shift+w"], "command": "expand_selection", "args": {"to": "scope"} },
+	{ "keys": ["super+shift+b"], "command": "expand_selection", "args": {"to": "brackets"} },
+	{ "keys": ["super+shift+alt+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+	{ "keys": ["super+shift+alt+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["super+tab"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["super+1"], "command": "toggle_side_bar" }
+
+]
